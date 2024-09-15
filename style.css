@@ -53,3 +53,11 @@ button {
     backdrop-filter: blur(20rem);
     padding: 250px;
 }
+@media only screen and (max-width: 600px){
+    .note{
+        height: auto;
+        width: auto;
+        backdrop-filter: blur(20rem);
+        padding: 100px;
+    }
+}
