@@ -1,2 +1,3 @@
 # weather-web
-Weather App
+ This is a prototype of a Weather App made from HTML CSS And Javascripct.....
+ This is only FrontENd..
