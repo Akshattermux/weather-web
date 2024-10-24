@@ -23,9 +23,26 @@ function fetchWeather(location) {
             locationElement.textContent = data.name;
             temperatureElement.textContent = `${Math.round(data.main.temp)}°C`;
             descriptionElement.textContent = data.weather[0].description;
+            changebg(data.weather[0].description);
         })
         .catch(error => {
             console.error('Error fetching weather data:', error);
             alert("||  Error To Finding Location ||")
         });
+}
+function changebg(description) {
+    console.log(description); // To see what the weather description is
+
+    if (description.toLowerCase().includes("rain")) {
+        document.body.style.backgroundImage = "url('Rainy.gif')";
+    } else if (description.toLowerCase().includes("cloud")) {
+        document.body.style.backgroundImage = "url('Cloudy.gif')";
+    } else if (description.toLowerCase().includes("clear")) {
+        document.body.style.backgroundImage = " url('Sunny.gif') ";
+        
+    }else if (description.toLowerCase().includes("Thunder")) {
+        document.body.style.backgroundImage = " url('Thunder.gif') ";
+    } else {
+        document.body.style.backgroundImage = "url('Default.gif')";
+    }
 }
