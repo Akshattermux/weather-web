@@ -43,6 +43,6 @@ function changebg(description) {
     }else if (description.toLowerCase().includes("Thunder")) {
         document.body.style.backgroundImage = " url('Thunder.gif') ";
     } else {
-        document.body.style.backgroundImage = "url('Default.gif')";
+        document.body.style.backgroundImage = "url('weather.jpg')";
     }
 }
